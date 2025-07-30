@@ -1,0 +1,94 @@
+<!-- Life Care Pathology Lab - Patient Report Portal --><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Care Pathology Lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0088cc;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 2em auto;
+      padding: 2em;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5em;
+    }
+    th, td {
+      padding: 0.8em;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    a.download {
+      color: #0088cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .logout {
+      text-align: center;
+      margin-top: 2em;
+    }
+    .logout a {
+      color: #fff;
+      background: #d9534f;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Life Care Pathology Lab</h1>
+    <p>Welcome, [Patient Name]</p>
+  </header>  <div class="container">
+    <h2>Your Reports</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Report Date</th>
+          <th>Report Type</th>
+          <th>Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2025-07-25</td>
+          <td>Blood Test</td>
+          <td><a class="download" href="reports/blood_test_0725.pdf" target="_blank">Download</a></td>
+        </tr>
+        <tr>
+          <td>2025-07-10</td>
+          <td>Urine Test</td>
+          <td><a class="download" href="reports/urine_test_0710.pdf" target="_blank">Download</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="logout">
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+</body>
+</html>
